@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Pure CSS Parallax</title>
+		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+	</head>
+	<body>
+		<!-- Add parallax layers here -->
+		<div class="parallax-back"></div>
+		<div class="parallax-hill"></div>
+		<div class="parallax-front"></div>
+
+		<!-- HEADER & NAVIGATION -->
+		<header class="[ container overlay-wide ][ text-light ]">
+			<div class="[ flex-between flex-v-center ][ wrapper ]">
+				<div class="font-large font-bold logo uppercase">Logo</div>
+				<nav>
+					<ul class="[ flex ][ bullet-none gap font-medium ]">
+						<li>Accueil</li>
+						<li>Blog</li>
+						<li>Contact</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="layout">
+			<!-- HERO -->
+			<section class="[ grid-center overlay-anchor ][ hero ]">
+				<div class="text-light text-center wrapper">
+					<h1 class="font-xxlarge font-bold text-gradient uppercase">
+						Les étoiles vous suivent
+					</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+				<a
+					href="#beaute"
+					class="[ overlay-center-bottom ][ text-light opacity-6 ]"
+				>
+					<iconify-icon
+						icon="ic:baseline-arrow-circle-down"
+						width="64"
+					></iconify-icon>
+				</a>
+			</section>
+			<!-- MAIN CONTENT -->
+			<main class="[ container ][ color-light ]">
+				<section class="[ flow ][ wrapper ]">
+					<h2 id="beaute" class="font-xlarge text-title">
+						Admirer la beauté de la nature
+					</h2>
+					<p class="text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Repellendus, sed veritatis aperiam repudiandae impedit laboriosam
+						dicta explicabo dolor inventore omnis quos fugit laudantium
+						reprehenderit illo provident magni adipisci consectetur eaque.
+					</p>
+					<p class="text">
+						Fugiat odio vero expedita sit, iste facilis sunt voluptate
+						consequuntur libero natus atque vel quos omnis magni laudantium
+						nulla tenetur labore officia? Officia ab dolores necessitatibus
+						itaque vitae temporibus inventore.
+					</p>
+					<p class="text">
+						Recusandae rem mollitia sequi eius assumenda suscipit voluptatem qui
+						id quisquam repellendus ipsum optio, dolore illum maiores quas
+						earum, ab corporis voluptatibus? Facere cumque maxime nemo magnam.
+						Saepe, voluptatibus quae.
+					</p>
+				</section>
+			</main>
+			<!-- FOOTER -->
+			<footer class="container color-dark">
+				<div class="wrapper">
+					<p>Design de Shayne Fortier</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
