@@ -5,16 +5,18 @@
 
 [class^="parallax"] {
 	background-size: cover;
-	position: absolute;
-	inset: 0;
 	background-repeat: no-repeat;
 
+	/* Essential for parallax */
+	position: absolute;
+	inset: 0;
 	transform-style: preserve-3d;
 }
 .parallax-3 {
 	background-image: url("../images/bg-small.jpg");
 	background-position: center;
 
+	/* Essential for parallax */
 	z-index: -3;
 	transform: translateZ(-5px) scale(6);
 }
@@ -22,6 +24,7 @@
 	background-image: url("../images/hill-small.png");
 	background-position: center -400px;
 
+	/* Essential for parallax */
 	z-index: -2;
 	transform: translateZ(-2px) scale(3);
 }
@@ -29,9 +32,13 @@
 	background-image: url("../images/hill-front-small.png");
 	background-position: center -400px;
 
+	/* Essential for parallax */
 	z-index: -1;
 	transform: translateZ(-1px) scale(2);
 }
+
+/* The media queries are there just to load the image resolution
+	based on the device size */
 @media screen and (min-width: 960px) {
 	.parallax-3 {
 		background-image: url("../images/bg-medium.jpg");
