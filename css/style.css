@@ -3,8 +3,16 @@
     Pure CSS Parallax Scrolling
     ===================================================== */
 
-html, body{
+html{
+	overflow: hidden;
+}
+body{
+	/* Pour le parallax */
+	height: 100vh;
 	overflow-x: hidden;
+	overflow-y: auto;
+	transform-style: preserve-3d;
+	perspective: 1px;
 }
 
 [class^="parallax"] {
@@ -132,12 +140,6 @@ body {
 	position: relative;
 	scroll-behavior: smooth;
 	transition-delay: 1s;
-
-	/* Pour le parallax */
-	height: 100vh;
-	overflow-y: auto;
-	transform-style: preserve-3d;
-	perspective: 1px;
 }
 
 /* ===== Composition ===== */
