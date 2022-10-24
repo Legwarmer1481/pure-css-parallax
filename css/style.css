@@ -131,10 +131,6 @@ body{
 	font: inherit;
 }
 
-html {
-	/* Pour le parallax */
-	overflow: hidden;
-}
 body {
 	font: normal normal 400 1.125rem "Akshar", sans-serif;
 	position: relative;
