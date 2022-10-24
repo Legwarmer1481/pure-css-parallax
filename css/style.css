@@ -3,6 +3,10 @@
     Pure CSS Parallax Scrolling
     ===================================================== */
 
+html, body{
+	overflow-x: hidden;
+}
+
 [class^="parallax"] {
 	background-size: cover;
 	background-repeat: no-repeat;
